@@ -1,0 +1,199 @@
+/* ============================================================
+   Tibly Design System — "Anchor"
+   Navy owns structure. Green owns interaction. Gray does the work.
+   Canonical token source. Import in globals.css before anything else.
+   ============================================================ */
+
+:root {
+  /* ---- Navy (structure: chrome, headings, nav, emphasis) ---- */
+  --navy-50:  #EEF2F9;
+  --navy-100: #DBE4F2;
+  --navy-200: #B9C9E4;
+  --navy-300: #8FA7D0;
+  --navy-400: #6383B8;
+  --navy-500: #40639D;
+  --navy-600: #294A82;
+  --navy-700: #1A366B;
+  --navy-800: #0F2557;   /* brand anchor */
+  --navy-900: #0A1839;
+
+  /* ---- Green (interaction: buttons, links, active, focus) ---- */
+  --green-50:  #EAF5EF;
+  --green-100: #D2EADD;
+  --green-200: #A6D5BC;
+  --green-300: #74BC96;
+  --green-400: #479D71;
+  --green-500: #2C8A5C;
+  --green-600: #1F7A4D;  /* action base */
+  --green-700: #186040;  /* hover / link text */
+  --green-800: #124A32;  /* pressed */
+  --green-900: #0C3423;
+
+  /* ---- Neutrals (cool, navy-tinted) ---- */
+  --neutral-0:   #FFFFFF;
+  --neutral-50:  #F7F8FA;
+  --neutral-100: #EFF1F4;
+  --neutral-200: #E2E5EA;
+  --neutral-300: #CDD2DA;
+  --neutral-400: #A8AFBB;
+  --neutral-500: #7C8492;
+  --neutral-600: #5A6372;
+  --neutral-700: #434B58;
+  --neutral-800: #2C323D;
+  --neutral-900: #171B22;
+
+  /* ---- Role aliases (use these in components) ---- */
+  --color-structure:      var(--navy-800);
+  --color-structure-soft: var(--navy-700);
+  --color-action:         var(--green-600);
+  --color-action-hover:   var(--green-700);
+  --color-action-pressed: var(--green-800);
+  --color-link:           var(--green-700);
+  --color-link-hover:     var(--green-800);
+  --color-active-indicator: var(--green-400); /* on navy chrome */
+
+  /* ---- Semantic (statuses = tinted pill + icon, NEVER solid fills) ---- */
+  --success-bg:     var(--green-50);
+  --success-text:   var(--green-700);
+  --success-border: var(--green-200);
+
+  --warning-bg:     #FAEEDA;
+  --warning-text:   #854F0B;
+  --warning-border: #F0D6A3;
+
+  --danger-bg:      #FCEBEB;
+  --danger-text:    #A32626;
+  --danger-border:  #F0B9B9;
+  --danger-solid:   #C5352F;  /* destructive buttons only */
+  --danger-solid-hover: #A32626;
+
+  --info-bg:        var(--navy-50);
+  --info-text:      var(--navy-700);
+  --info-border:    var(--navy-200);
+
+  /* ---- Surfaces, text, borders ---- */
+  --surface-page:  var(--neutral-50);
+  --surface-card:  var(--neutral-0);
+  --surface-inset: var(--neutral-100);
+  --text-strong:   var(--navy-800);   /* headings, key data */
+  --text-body:     var(--neutral-800);
+  --text-secondary:var(--neutral-600);
+  --text-muted:    var(--neutral-400);
+  --text-on-dark:  #FFFFFF;
+  --text-on-dark-muted: var(--navy-300);
+  --border-hairline: var(--neutral-200);
+  --border-input:    var(--neutral-300);
+
+  /* ---- Focus ---- */
+  --focus-ring: 0 0 0 3px rgba(31, 122, 77, 0.25);
+
+  /* ---- Typography ----
+     Display (EB Garamond 600/700): >= 22px ONLY. Never body, tables, forms.
+     Sizes carry +12% optical compensation for Garamond's small x-height. */
+  --font-display: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-sans:    "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+
+  --display-xl: 44px;  /* marketing hero        / lh 1.08 / w 700 */
+  --display-lg: 33px;  /* marketing subhead     / lh 1.15 / w 600 */
+  --display-md: 26px;  /* page titles           / lh 1.20 / w 600 */
+  --display-sm: 22px;  /* record titles, floor  / lh 1.25 / w 600 */
+
+  --text-lg:   16px;   /* long-form body                 */
+  --text-base: 14px;   /* default UI body / tables       */
+  --text-sm:   13px;   /* labels, secondary, buttons     */
+  --text-xs:   12px;   /* table headers, captions, pills */
+
+  /* Data contexts (tables, vitals, dosages, prices):
+     apply .font-data or font-feature-settings below.
+     tnum = aligned columns, zero = slashed 0, ss02 = unambiguous Il1. */
+  --font-features-data: "tnum" 1, "zero" 1, "ss02" 1;
+
+  /* ---- Shape & elevation ---- */
+  --radius-sm:   6px;    /* pills-adjacent small controls */
+  --radius-md:   8px;    /* inputs, buttons, chips        */
+  --radius-lg:   12px;   /* cards, tables, modals         */
+  --radius-full: 999px;  /* pills, avatars                */
+
+  --shadow-card:    0 1px 2px rgba(10, 24, 57, 0.06);
+  --shadow-raised:  0 4px 12px rgba(10, 24, 57, 0.10);
+  --shadow-overlay: 0 12px 32px rgba(10, 24, 57, 0.16);
+
+  /* ---- Sizing ---- */
+  --control-h: 36px;     /* inputs, buttons, selects */
+  --topbar-h:  52px;
+}
+
+/* Utility: data-safe numerals wherever numbers meet clinical decisions */
+.font-data {
+  font-family: var(--font-sans);
+  font-feature-settings: var(--font-features-data);
+  font-variant-numeric: tabular-nums slashed-zero;
+}
+
+/* ============================================================
+   Tailwind v4 — delete this block if you are on v3 and use
+   tailwind.config.ts instead. With v4, these become utilities:
+   bg-navy-800, text-green-700, font-display, rounded-lg, etc.
+   ============================================================ */
+@theme inline {
+  --color-navy-50: var(--navy-50);
+  --color-navy-100: var(--navy-100);
+  --color-navy-200: var(--navy-200);
+  --color-navy-300: var(--navy-300);
+  --color-navy-400: var(--navy-400);
+  --color-navy-500: var(--navy-500);
+  --color-navy-600: var(--navy-600);
+  --color-navy-700: var(--navy-700);
+  --color-navy-800: var(--navy-800);
+  --color-navy-900: var(--navy-900);
+
+  --color-green-50: var(--green-50);
+  --color-green-100: var(--green-100);
+  --color-green-200: var(--green-200);
+  --color-green-300: var(--green-300);
+  --color-green-400: var(--green-400);
+  --color-green-500: var(--green-500);
+  --color-green-600: var(--green-600);
+  --color-green-700: var(--green-700);
+  --color-green-800: var(--green-800);
+  --color-green-900: var(--green-900);
+
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+
+  --color-success-bg: var(--success-bg);
+  --color-success-text: var(--success-text);
+  --color-success-border: var(--success-border);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-text: var(--warning-text);
+  --color-warning-border: var(--warning-border);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-text: var(--danger-text);
+  --color-danger-border: var(--danger-border);
+  --color-danger-solid: var(--danger-solid);
+  --color-info-bg: var(--info-bg);
+  --color-info-text: var(--info-text);
+  --color-info-border: var(--info-border);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-raised: var(--shadow-raised);
+  --shadow-overlay: var(--shadow-overlay);
+}
