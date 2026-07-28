@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tibly patient timeline placeholder</title>
+  <desc id="desc">A calm clinical interface showing a patient's history in chronological order.</desc>
+  <rect width="1440" height="900" fill="#f7f8fa"/>
+  <rect width="1440" height="82" fill="#0f2557"/>
+  <rect x="45" y="24" width="36" height="36" rx="8" fill="#ffffff"/>
+  <text x="57" y="50" fill="#0f2557" font-family="Georgia, serif" font-size="23" font-weight="700">T</text>
+  <text x="102" y="49" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="600">Tibly</text>
+  <text x="300" y="50" fill="#b9c9e4" font-family="Arial, sans-serif" font-size="16">Patients</text>
+  <text x="416" y="50" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="600">Timeline</text>
+  <rect x="416" y="78" width="64" height="4" rx="2" fill="#479d71"/>
+  <text x="524" y="50" fill="#b9c9e4" font-family="Arial, sans-serif" font-size="16">Documents</text>
+  <circle cx="1370" cy="41" r="18" fill="#294a82"/>
+  <rect x="0" y="82" width="326" height="818" fill="#ffffff"/>
+  <line x1="326" y1="82" x2="326" y2="900" stroke="#e2e5ea"/>
+  <text x="45" y="138" fill="#7c8492" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">PATIENT</text>
+  <circle cx="76" cy="205" r="32" fill="#eef2f9"/>
+  <text x="58" y="212" fill="#1a366b" font-family="Arial, sans-serif" font-size="18" font-weight="700">DR</text>
+  <text x="124" y="195" fill="#0f2557" font-family="Georgia, serif" font-size="24" font-weight="700">D. Ramsamy</text>
+  <text x="124" y="221" fill="#5a6372" font-family="Arial, sans-serif" font-size="14">62 years · Female</text>
+  <rect x="45" y="273" width="236" height="42" rx="8" fill="#eef2f9"/>
+  <text x="61" y="299" fill="#1a366b" font-family="Arial, sans-serif" font-size="14">Overview</text>
+  <text x="61" y="355" fill="#5a6372" font-family="Arial, sans-serif" font-size="14">Clinical history</text>
+  <text x="61" y="407" fill="#5a6372" font-family="Arial, sans-serif" font-size="14">Investigations</text>
+  <text x="61" y="459" fill="#5a6372" font-family="Arial, sans-serif" font-size="14">Documents</text>
+  <text x="380" y="142" fill="#0f2557" font-family="Georgia, serif" font-size="31" font-weight="700">Patient timeline</text>
+  <text x="380" y="174" fill="#5a6372" font-family="Arial, sans-serif" font-size="15">Every visit, result and follow-up in one place</text>
+  <rect x="1182" y="123" width="206" height="46" rx="8" fill="#1f7a4d"/>
+  <text x="1221" y="152" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="600">New consultation</text>
+  <line x1="426" y1="244" x2="426" y2="780" stroke="#b9c9e4" stroke-width="3"/>
+  <circle cx="426" cy="289" r="13" fill="#ffffff" stroke="#2c8a5c" stroke-width="5"/>
+  <rect x="472" y="228" width="866" height="172" rx="12" fill="#ffffff" stroke="#e2e5ea"/>
+  <text x="506" y="267" fill="#1f7a4d" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">TODAY · CONSULTATION</text>
+  <text x="506" y="307" fill="#0f2557" font-family="Georgia, serif" font-size="23" font-weight="700">Follow-up consultation</text>
+  <text x="506" y="342" fill="#434b58" font-family="Arial, sans-serif" font-size="15">Symptoms improving · treatment continued · next review planned</text>
+  <rect x="506" y="361" width="118" height="23" rx="12" fill="#eaf5ef"/>
+  <text x="522" y="377" fill="#186040" font-family="Arial, sans-serif" font-size="11">Plan completed</text>
+  <circle cx="426" cy="488" r="13" fill="#ffffff" stroke="#8fa7d0" stroke-width="5"/>
+  <rect x="472" y="438" width="866" height="142" rx="12" fill="#ffffff" stroke="#e2e5ea"/>
+  <text x="506" y="478" fill="#7c8492" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">14 FEB · RESULTS</text>
+  <text x="506" y="519" fill="#0f2557" font-family="Georgia, serif" font-size="22" font-weight="700">Investigation results reviewed</text>
+  <text x="506" y="551" fill="#434b58" font-family="Arial, sans-serif" font-size="15">ECG and blood results attached to patient record</text>
+  <circle cx="426" cy="671" r="13" fill="#ffffff" stroke="#8fa7d0" stroke-width="5"/>
+  <rect x="472" y="622" width="866" height="142" rx="12" fill="#ffffff" stroke="#e2e5ea"/>
+  <text x="506" y="662" fill="#7c8492" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">18 AUG · CONSULTATION</text>
+  <text x="506" y="703" fill="#0f2557" font-family="Georgia, serif" font-size="22" font-weight="700">Initial consultation</text>
+  <text x="506" y="735" fill="#434b58" font-family="Arial, sans-serif" font-size="15">History, assessment and prescription saved</text>
+</svg>

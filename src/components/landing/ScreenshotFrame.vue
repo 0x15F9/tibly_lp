@@ -13,7 +13,6 @@ withDefaults(
 <template>
   <figure
     class="m-0 min-w-0 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-overlay"
-    aria-hidden="true"
   >
     <div
       v-if="label"

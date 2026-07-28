@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
-import { navLinks } from '../../data/landing'
+import type { LandingContent } from '../../content/landing'
 import BaseCta from './BaseCta.vue'
 import LandingIcon from './LandingIcon.vue'
+
+defineProps<{
+  brand: LandingContent['brand']
+  navigation: LandingContent['navigation']
+  cta: LandingContent['headerCta']
+}>()
 
 const menuOpen = ref(false)
 const menuButton = ref<HTMLButtonElement>()
@@ -39,21 +45,21 @@ onBeforeUnmount(() => {
       <a
         href="#top"
         class="flex shrink-0 items-center gap-2.5 text-navy-800"
-        aria-label="Tibly home"
+        :aria-label="brand.homeLabel"
         @click="closeMenu()"
       >
         <span
           class="flex size-8 items-center justify-center rounded-md bg-navy-800 font-display text-[19px] font-bold text-white"
           aria-hidden="true"
         >
-          T
+          {{ brand.name.charAt(0) }}
         </span>
-        <span class="font-display text-[23px] font-bold tracking-tight">Tibly</span>
+        <span class="font-display text-[23px] font-bold tracking-tight">{{ brand.name }}</span>
       </a>
 
-      <nav class="hidden items-center gap-8 md:flex" aria-label="Primary">
+      <nav class="hidden items-center gap-7 md:flex" :aria-label="brand.navLabel">
         <a
-          v-for="link in navLinks"
+          v-for="link in navigation"
           :key="link.href"
           :href="link.href"
           class="text-sm font-medium text-neutral-700 transition-colors hover:text-navy-800"
@@ -63,8 +69,7 @@ onBeforeUnmount(() => {
       </nav>
 
       <div class="ml-auto hidden md:block md:ml-0">
-        <!-- Law 3: the solid green button belongs to the hero — nav stays navy outline. -->
-        <BaseCta href="#demo" variant="secondary">Book a demo</BaseCta>
+        <BaseCta :href="cta.href" variant="secondary">{{ cta.label }}</BaseCta>
       </div>
 
       <button
@@ -76,7 +81,7 @@ onBeforeUnmount(() => {
         aria-controls="mobile-nav"
         @click="menuOpen = !menuOpen"
       >
-        <span class="sr-only">{{ menuOpen ? 'Close menu' : 'Open menu' }}</span>
+        <span class="sr-only">{{ menuOpen ? brand.menuClose : brand.menuOpen }}</span>
         <LandingIcon :name="menuOpen ? 'close' : 'menu'" :size="20" />
       </button>
     </div>
@@ -91,11 +96,11 @@ onBeforeUnmount(() => {
         v-if="menuOpen"
         id="mobile-nav"
         class="border-t border-neutral-100 bg-white shadow-raised md:hidden"
-        aria-label="Primary"
+        :aria-label="brand.navLabel"
       >
         <div class="lp-wrap flex flex-col gap-1 py-4">
           <a
-            v-for="link in navLinks"
+            v-for="link in navigation"
             :key="link.href"
             :href="link.href"
             class="rounded-md px-3 py-2.5 text-[15px] font-medium text-neutral-700 hover:bg-neutral-50 hover:text-navy-800"
@@ -103,8 +108,8 @@ onBeforeUnmount(() => {
           >
             {{ link.label }}
           </a>
-          <BaseCta href="#demo" variant="secondary" class="mt-2 w-full" @click="closeMenu()">
-            Book a demo
+          <BaseCta :href="cta.href" variant="secondary" class="mt-2 w-full" @click="closeMenu()">
+            {{ cta.label }}
           </BaseCta>
         </div>
       </nav>

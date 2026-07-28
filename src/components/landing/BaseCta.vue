@@ -6,12 +6,16 @@ withDefaults(
   defineProps<{
     /** Renders an anchor when set, otherwise a button. */
     href?: string
+    ariaLabel?: string
+    target?: '_blank' | '_self'
     type?: 'button' | 'submit'
     variant?: CtaVariant
     size?: CtaSize
   }>(),
   {
     href: undefined,
+    ariaLabel: undefined,
+    target: undefined,
     type: 'button',
     variant: 'primary',
     size: 'md',
@@ -38,6 +42,9 @@ const sizeClasses: Record<CtaSize, string> = {
   <component
     :is="href ? 'a' : 'button'"
     :href="href"
+    :aria-label="ariaLabel"
+    :target="href ? target : undefined"
+    :rel="href && target === '_blank' ? 'noopener noreferrer' : undefined"
     :type="href ? undefined : type"
     class="inline-flex items-center justify-center gap-2 rounded-lg border font-semibold whitespace-nowrap transition-colors"
     :class="[variantClasses[variant], sizeClasses[size]]"

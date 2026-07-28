@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">Doctor portrait placeholder</title>
+  <rect width="320" height="320" rx="160" fill="#eef2f9"/>
+  <circle cx="160" cy="125" r="57" fill="#b9c9e4"/>
+  <path d="M64 292c7-76 46-112 96-112s89 36 96 112" fill="#8fa7d0"/>
+  <path d="M116 198l44 65 44-65" fill="#ffffff"/>
+  <path d="M134 205l26 58 26-58" fill="#1a366b"/>
+</svg>

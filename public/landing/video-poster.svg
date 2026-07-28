@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tibly consultation demo poster</title>
+  <desc id="desc">A calm preview of the Tibly patient record and guided consultation workflow.</desc>
+  <rect width="1600" height="900" fill="#0a1839"/>
+  <circle cx="1360" cy="20" r="470" fill="#0f2557"/>
+  <circle cx="198" cy="852" r="390" fill="#1a366b" opacity=".5"/>
+  <rect x="195" y="130" width="1210" height="640" rx="18" fill="#ffffff"/>
+  <rect x="195" y="130" width="1210" height="60" rx="18" fill="#eef2f9"/>
+  <circle cx="230" cy="160" r="7" fill="#cdd2da"/>
+  <circle cx="254" cy="160" r="7" fill="#cdd2da"/>
+  <circle cx="278" cy="160" r="7" fill="#cdd2da"/>
+  <text x="324" y="166" fill="#7c8492" font-family="Arial, sans-serif" font-size="14">app.tibly.net</text>
+  <rect x="195" y="190" width="1210" height="68" fill="#0f2557"/>
+  <text x="238" y="233" fill="#ffffff" font-family="Georgia, serif" font-size="23" font-weight="700">Tibly</text>
+  <text x="420" y="232" fill="#b9c9e4" font-family="Arial, sans-serif" font-size="15">Patient record</text>
+  <text x="550" y="232" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="600">Consultation</text>
+  <rect x="550" y="253" width="84" height="5" rx="2" fill="#479d71"/>
+  <rect x="238" y="305" width="253" height="400" rx="10" fill="#f7f8fa"/>
+  <text x="270" y="350" fill="#7c8492" font-family="Arial, sans-serif" font-size="12" font-weight="700">PATIENT</text>
+  <text x="270" y="397" fill="#0f2557" font-family="Georgia, serif" font-size="25" font-weight="700">D. Ramsamy</text>
+  <text x="270" y="424" fill="#5a6372" font-family="Arial, sans-serif" font-size="13">Follow-up · Today</text>
+  <rect x="270" y="471" width="188" height="38" rx="8" fill="#eef2f9"/>
+  <rect x="270" y="529" width="188" height="14" rx="7" fill="#e2e5ea"/>
+  <rect x="270" y="570" width="158" height="14" rx="7" fill="#e2e5ea"/>
+  <rect x="270" y="611" width="174" height="14" rx="7" fill="#e2e5ea"/>
+  <rect x="535" y="305" width="827" height="400" rx="10" fill="#ffffff" stroke="#e2e5ea"/>
+  <text x="577" y="355" fill="#0f2557" font-family="Georgia, serif" font-size="28" font-weight="700">Consultation</text>
+  <rect x="577" y="391" width="743" height="92" rx="8" fill="#f7f8fa" stroke="#cdd2da"/>
+  <rect x="602" y="421" width="526" height="13" rx="6" fill="#cdd2da"/>
+  <rect x="602" y="449" width="401" height="13" rx="6" fill="#e2e5ea"/>
+  <text x="577" y="540" fill="#0f2557" font-family="Arial, sans-serif" font-size="14" font-weight="700">Plan</text>
+  <rect x="577" y="567" width="225" height="40" rx="8" fill="#eef2f9"/>
+  <rect x="820" y="567" width="225" height="40" rx="8" fill="#eef2f9"/>
+  <rect x="1063" y="567" width="225" height="40" rx="8" fill="#eef2f9"/>
+  <rect x="1130" y="642" width="190" height="42" rx="8" fill="#1f7a4d"/>
+</svg>
