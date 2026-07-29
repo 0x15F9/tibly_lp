@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
       <nav
         v-if="menuOpen"
         id="mobile-nav"
-        class="border-t border-neutral-100 bg-white shadow-raised md:hidden"
+        class="absolute inset-x-0 top-full border-t border-neutral-100 bg-white shadow-raised md:hidden"
         :aria-label="brand.navLabel"
       >
         <div class="lp-wrap flex flex-col gap-1 py-4">
