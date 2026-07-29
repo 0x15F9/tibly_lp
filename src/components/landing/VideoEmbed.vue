@@ -58,7 +58,7 @@ function play() {
             class="flex size-16 items-center justify-center rounded-full border border-white bg-navy-800 shadow-overlay sm:size-20"
             aria-hidden="true"
           >
-            <LandingIcon name="arrow-right" :size="26" :stroke-width="2.2" />
+            <LandingIcon name="play" :size="26" />
           </span>
           <span class="rounded-full bg-navy-900/80 px-4 py-2 text-xs font-semibold tracking-[0.04em] uppercase">
             {{ sourceUrl ? playLabel : unavailableLabel }}

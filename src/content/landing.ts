@@ -39,15 +39,18 @@ export const landingContent = {
     href: '#contact',
   },
   hero: {
-    eyebrow: 'Built for private practices in Mauritius',
-    headline: 'Spend the consultation with your patient — not the screen.',
+    headline: ['Spend the consultation with your patient —', 'not the screen.'],
     subhead:
-      'Tibly keeps patient history, prescriptions, tests and documents in one fast workflow, built for private practices in Mauritius. The record is ready before the patient sits down, and the paperwork is done before they stand up.',
-    trustLine: 'In real, daily use in a Mauritian practice for three years.',
+      'Streamline your practice. Keep every patient record and document ready in one fast workflow.',
+    trustLines: [
+      'In real, daily use in a Mauritian practice for three years.',
+      'Over 6,000 patient records.',
+      'Over 12,000 consultations.',
+    ],
     primaryCta: {
-      label: 'See it running on your own patients',
+      label: 'See Tibly in your practice',
       href: WHATSAPP_URL,
-      ariaLabel: 'See Tibly running on your own patients via WhatsApp',
+      ariaLabel: 'See Tibly in your practice via WhatsApp',
     },
     secondaryCta: {
       label: 'Watch the 70-second demo',
