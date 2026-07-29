@@ -40,8 +40,7 @@ export const landingContent = {
   },
   hero: {
     headline: ['Spend the consultation with your patient —', 'not the screen.'],
-    subhead:
-      'Streamline your practice. Keep every patient record and document ready in one fast workflow.',
+    subhead: 'Streamline your practice.',
     trustLines: [
       'In real, daily use in a Mauritian practice for three years.',
       'Over 6,000 patient records.',
